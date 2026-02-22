@@ -1,6 +1,6 @@
 import { memo, useEffect, useState, useCallback, useRef } from 'react';
 
-const BIRTH_DATE = new Date('2007-06-30').getTime();
+const BIRTH_DATE = new Date('2000-07-02').getTime();
 const MS_PER_YEAR = 1000 * 60 * 60 * 24 * 365.25;
 
 export const PreciseAge = memo(function PreciseAge() {

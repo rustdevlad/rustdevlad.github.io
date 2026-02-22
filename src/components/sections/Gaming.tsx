@@ -11,7 +11,7 @@ export const Gaming = memo(function Gaming() {
     return (
       <div>
         <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
-          Gaming
+          Игра
         </h2>
         <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/30 dark:bg-black/30 backdrop-blur-md w-full">
           <div className="animate-pulse flex space-x-4">
@@ -30,7 +30,7 @@ export const Gaming = memo(function Gaming() {
     return (
       <div>
         <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
-          Gaming
+          Игра
         </h2>
         <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/30 dark:bg-black/30 backdrop-blur-md w-full">
           <div className="flex items-center gap-4">
@@ -54,7 +54,7 @@ export const Gaming = memo(function Gaming() {
   return (
     <div>
       <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white">
-        Gaming
+        Игра
       </h2>
       {!data ? (
         <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/30 dark:bg-black/30 backdrop-blur-md w-full">

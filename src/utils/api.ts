@@ -1,4 +1,4 @@
-export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://portfolio-api-taupe-theta.vercel.app/api';
+export const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://portfolio-api-beta-liart.vercel.app/api';
 
 const DEFAULT_TIMEOUT = 10000;
 const MAX_RETRIES = 2;

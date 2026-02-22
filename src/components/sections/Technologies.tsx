@@ -86,7 +86,7 @@ export const Technologies = memo(function Technologies() {
     >
       <div className="container mx-auto px-4">
         <h2 className="mb-12 text-center text-3xl font-bold text-gray-900 dark:text-white">
-          Technologies
+          Технологии
         </h2>
         <div className="grid gap-6 grid-cols-1">
           {Object.entries(technologies).map(([category, items]) => (

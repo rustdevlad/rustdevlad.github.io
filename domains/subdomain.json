@@ -1,11 +1,11 @@
 {
     "description": "just desc",
-    "repo": "https://github.com/onlive1337/onlive1337.github.io",
+    "repo": "https://github.com/rustdevlad/rustdevlad.github.io",
     "owner": {
-        "username": "onlive1337",
-        "discord": "onswix"
+        "username": "rustdevlad",
+        "email": "christian.vlad.felpy@gmail.com"
     },
     "record": {
-        "CNAME": "onlive1337.github.io"
+        "CNAME": "rustdevlad.github.io"
     }
-} 
+}

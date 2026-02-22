@@ -101,7 +101,7 @@ export const NowPlaying = memo(function NowPlaying() {
     return (
       <div>
         <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
-          Now Playing
+          Сейчас играет
           <Volume2 className="w-4 h-4 text-green-500 animate-pulse" />
         </h2>
         <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/30 dark:bg-black/30 backdrop-blur-md">
@@ -121,7 +121,7 @@ export const NowPlaying = memo(function NowPlaying() {
     return (
       <div>
         <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
-          Now Playing
+          Сейчас играет
           <Volume2 className="w-4 h-4 text-gray-400" />
         </h2>
         <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/30 dark:bg-black/30 backdrop-blur-md">
@@ -147,7 +147,7 @@ export const NowPlaying = memo(function NowPlaying() {
     return (
       <div>
         <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
-          Now Playing
+          Сейчас играет
           <Volume2 className="w-4 h-4 text-gray-400" />
         </h2>
         <div className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/30 dark:bg-black/30 backdrop-blur-md">
@@ -172,7 +172,7 @@ export const NowPlaying = memo(function NowPlaying() {
   return (
     <div>
       <h2 className="mb-6 text-xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
-        Now Playing
+        Сейчас играет
         <Volume2 className="w-4 h-4 text-green-500 animate-pulse" />
       </h2>
       <a

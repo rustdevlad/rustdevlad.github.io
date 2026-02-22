@@ -9,7 +9,7 @@ import React from "react";
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "onlive - Full Stack Developer",
+  title: "Vladislav - Full Stack Developer",
   description: "Personal portfolio website",
   icons: {
     icon: '/favicon.png',

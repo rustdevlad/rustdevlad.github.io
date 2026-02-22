@@ -41,11 +41,11 @@ A modern, responsive portfolio website built with Next.js, React, and TypeScript
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/onlive1337/onlive1337.github.io.git
-cd onlive1337.github.io
+git clone https://github.com/rustdevlad/rustdevlad.github.io.git my-portfolio
+cd my-portfolio
 ```
 
-1. Install dependencies:
+2. Install dependencies:
 
 ```bash
 npm install
@@ -53,7 +53,7 @@ npm install
 yarn install
 ```
 
-1. Create a `.env` file in the root directory and add your API keys:
+3. Create a `.env` file in the root directory and add your API keys:
 
 ```env
 SPOTIFY_CLIENT_ID=your_spotify_client_id
@@ -63,7 +63,7 @@ STEAM_API_KEY=your_steam_api_key
 STEAM_ID=your_steam_id
 ```
 
-1. Run the development server:
+4. Run the development server:
 
 ```bash
 npm run dev
@@ -71,7 +71,7 @@ npm run dev
 yarn dev
 ```
 
-1. Open [http://localhost:3000](http://localhost:3000) in your browser.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📦 Project Structure
 
@@ -155,9 +155,9 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📞 Contact
 
-Onlive - [@onswix](https://t.me/onswix)
+Vladislav - [@rustdevlad](https://t.me/rustdevlad)
 
-Project Link: [https://github.com/onlive1337/onlive1337.github.io](https://github.com/onlive1337/onlive1337.github.io)
+Project Link: [https://github.com/rustdevlad/rustdevlad.github.io](https://github.com/rustdevlad/rustdevlad.github.io)
 
 ## 🙏 Acknowledgments
 

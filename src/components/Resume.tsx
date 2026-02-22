@@ -27,7 +27,7 @@ export default function Resume() {
 
             const opt = {
                 margin: 10,
-                filename: 'Bobur_Xamidov_Resume.pdf',
+                filename: 'Vladislav_Podolyako_Resume.pdf',
                 image: { type: 'jpeg' as const, quality: 0.98 },
                 html2canvas: {
                     scale: 2,
@@ -60,7 +60,7 @@ export default function Resume() {
                         className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
                     >
                         <ArrowLeft className="w-4 h-4" />
-                        <span>Back to Portfolio</span>
+                        <span>Назад к Портфолио</span>
                     </Link>
 
                     <button
@@ -76,7 +76,7 @@ export default function Resume() {
                         ) : (
                             <>
                                 <Download className="w-4 h-4" />
-                                <span>Download PDF</span>
+                                <span>Скачать резюме PDF</span>
                             </>
                         )}
                     </button>
@@ -97,10 +97,10 @@ export default function Resume() {
                     {/* Header */}
                     <div style={{ borderBottom: '4px solid #1f2937', padding: '2rem' }}>
                         <h1 style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.5rem' }}>
-                            Bobur Xamidov
+                            Владислав Подоляко
                         </h1>
                         <p style={{ fontSize: '1.25rem', color: '#4b5563' }}>
-                            Front-End Developer
+                            Full Stack разработчик
                         </p>
                     </div>
 
@@ -110,30 +110,30 @@ export default function Resume() {
                             {/* Personal Info */}
                             <div>
                                 <h2 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.75rem', paddingBottom: '0.5rem', borderBottom: '2px solid #d1d5db' }}>
-                                    Personal Info
+                                    Личная информация
                                 </h2>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.75rem', color: '#374151' }}>
                                     <span style={{ fontSize: '0.875rem' }}>✉</span>
-                                    <span style={{ wordBreak: 'break-all' }}>onswix@gmail.com</span>
+                                    <span style={{ wordBreak: 'break-all' }}>christian.vlad.felpy@gmail.com</span>
                                 </div>
                             </div>
 
                             {/* Skills */}
                             <div>
                                 <h2 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.75rem', paddingBottom: '0.5rem', borderBottom: '2px solid #d1d5db' }}>
-                                    Skills
+                                    Навыки
                                 </h2>
                                 <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                                     <tbody>
                                         {[
                                             { name: 'HTML/CSS', level: 90 },
                                             { name: 'React/Vue', level: 75 },
-                                            { name: 'Bootstrap', level: 80 },
+                                            { name: 'Tailwind CSS', level: 80 },
                                             { name: 'Git/GitHub', level: 85 },
                                             { name: 'JavaScript', level: 70 },
-                                            { name: 'Web Optimization', level: 85 },
-                                            { name: 'Responsive Design', level: 80 },
-                                            { name: 'Teamwork', level: 70 },
+                                            { name: 'Веб-оптимизация', level: 85 },
+                                            { name: 'Адаптивный дизайн', level: 80 },
+                                            { name: 'Командная работа', level: 70 },
                                             { name: 'Cross-Browser', level: 85 },
                                             { name: 'TypeScript', level: 40 },
                                         ].map((skill) => (
@@ -168,46 +168,51 @@ export default function Resume() {
                             {/* Summary */}
                             <div>
                                 <h2 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.75rem', paddingBottom: '0.5rem', borderBottom: '2px solid #d1d5db' }}>
-                                    Summary
+                                    Краткое содержание
                                 </h2>
                                 <p style={{ fontSize: '0.75rem', color: '#374151', lineHeight: '1.625', textAlign: 'justify' }}>
-                                    Dynamic Front-end Developer with over a year of experience in creating engaging and responsive web applications, dedicated to enhancing user experiences through innovative solutions. Proficiency in JavaScript and React, coupled with a strong focus on responsive design, enables the delivery of visually appealing and functional interfaces. Actively involved in open-source projects, demonstrating a commitment to collaborative development and continuous improvement. Eager to contribute to a creative team environment that values innovation and autonomy, while tackling complex challenges and advancing technical skills in impact projects.
+                                    Динамичный полнофункциональный разработчик с более чем годовым опытом создания привлекательных и адаптивных веб-приложений, посвятивший себя улучшению пользовательского опыта с помощью инновационных решений. Владение JavaScript и NextJS в сочетании с упором на адаптивный дизайн позволяет создавать визуально привлекательные и функциональные интерфейсы. Активно участвует в проектах с открытым исходным кодом, демонстрируя приверженность совместной разработке и постоянному совершенствованию. Стремится внести свой вклад в творческую командную среду, которая ценит инновации и автономность, одновременно решая сложные задачи и совершенствуя технические навыки в рамках важных проектов.
                                 </p>
                             </div>
 
                             {/* Work Experience */}
                             <div>
                                 <h2 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.75rem', paddingBottom: '0.5rem', borderBottom: '2px solid #d1d5db' }}>
-                                    Work Experience
+                                    Опыт работы
                                 </h2>
 
                                 {/* Job 1 */}
                                 <div style={{ marginBottom: '1rem' }}>
                                     <h3 style={{ fontSize: '0.875rem', fontWeight: '600', color: '#111827' }}>
-                                        Front-End Developer, IT Academy (Part-Time)
+                                        Разработчик C# Full Stack, IT Lux (частичная занятость)
                                     </h3>
                                     <p style={{ fontSize: '0.75rem', color: '#6b7280', marginBottom: '0.5rem' }}>
-                                        August 2024 - August 2025
+                                        Октябрь 2023 г. - Июнь 2024 г.
                                     </p>
                                     <div style={{ fontSize: '0.75rem', color: '#374151', marginLeft: '0.5rem' }}>
-                                        <p style={{ marginBottom: '0.125rem' }}>• Created custom UI components and implemented layouts using HTML5, CSS3, and JavaScript.</p>
-                                        <p style={{ marginBottom: '0.125rem' }}>• Participated in code reviews, feature planning, and design reviews.</p>
-                                        <p style={{ marginBottom: '0.125rem' }}>• Developed front-end user interfaces for several complex web applications with HTML, CSS, and JavaScript.</p>
+                                        <p style={{ marginBottom: '0.125rem' }}>• Разработал бэкэнд и фронтэнд функции для настольного приложения голосового помощника с использованием C# и .NET.</p>
+                                        <p style={{ marginBottom: '0.125rem' }}>• Интегрированное распознавание речи с использованием Vosk API для моделирования голоса и обработки команд.</p>
+                                        <p style={{ marginBottom: '0.125rem' }}>• Разработал и реализовал компоненты пользовательского интерфейса для настольного приложения.</p>
+                                        <p style={{ marginBottom: '0.125rem' }}>• Работал с базой данных PostgreSQL для хранения данных и логики приложения.</p>
+                                        <p style={{ marginBottom: '0.125rem' }}>• Участвовал в планировании функций, отладке и оптимизации кода.</p>
+                                        <p style={{ marginBottom: '0.125rem' }}>• Сотрудничал с командой по тестированию и улучшению производительности и стабильности приложения.</p>
                                     </div>
                                 </div>
 
                                 {/* Job 2 */}
                                 <div>
                                     <h3 style={{ fontSize: '0.875rem', fontWeight: '600', color: '#111827' }}>
-                                        System Administrator, PROWEB
+                                        Разработчик C# Full Stack, Оскемен Водоканал (Полная занятость)
                                     </h3>
                                     <p style={{ fontSize: '0.75rem', color: '#6b7280', marginBottom: '0.5rem' }}>
-                                        August 2025 - February 2026
+                                        Август 2024 г. - Январь 2025 г.
                                     </p>
                                     <div style={{ fontSize: '0.75rem', color: '#374151', marginLeft: '0.5rem' }}>
-                                        <p style={{ marginBottom: '0.125rem' }}>• Experienced in implementing, configuring and troubleshooting a variety of hardware and software systems.</p>
-                                        <p style={{ marginBottom: '0.125rem' }}>• Provided 24/7 technical support for all computer systems and networks.</p>
-                                        <p style={{ marginBottom: '0.125rem' }}>• Performed system patches and upgrades in a timely manner.</p>
+                                        <p style={{ marginBottom: '0.125rem' }}>• Разработал и поддерживал полнофункциональное приложение на C# для управления потреблением воды в масштабах города.</p>
+                                        <p style={{ marginBottom: '0.125rem' }}>• Работал с внутренним API и базой данных PostgreSQL, в которой хранились большие объемы данных о клиентах и счетах.</p>
+                                        <p style={{ marginBottom: '0.125rem' }}>• Исправлены критические ошибки и переработан устаревший код для повышения производительности и надежности системы.</p>
+                                        <p style={{ marginBottom: '0.125rem' }}>• Внедрены улучшения в бизнес-логику для расчета потребления холодной и горячей воды для каждого дома.</p>
+                                        <p style={{ marginBottom: '0.125rem' }}>• Помогал в тестировании, отладке и развертывании обновлений приложений.</p>
                                     </div>
                                 </div>
                             </div>
@@ -215,14 +220,14 @@ export default function Resume() {
                             {/* Education */}
                             <div>
                                 <h2 style={{ fontSize: '1rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.75rem', paddingBottom: '0.5rem', borderBottom: '2px solid #d1d5db' }}>
-                                    Education
+                                    Образование
                                 </h2>
                                 <div>
                                     <h3 style={{ fontSize: '0.875rem', fontWeight: '600', color: '#111827' }}>
-                                        Bachelor, ITPU (Software Engineer)
+                                        Высший колледж Казахстанского-Американского Свободного Университета, ИТ (программист-разработчик)
                                     </h3>
                                     <p style={{ fontSize: '0.75rem', color: '#6b7280' }}>
-                                        September 2025 - Present
+                                        Сентябрь 2021 г. - Июнь 2024 г.
                                     </p>
                                 </div>
                             </div>

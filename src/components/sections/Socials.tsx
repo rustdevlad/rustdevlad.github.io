@@ -10,25 +10,25 @@ const Telegram = dynamic(() => import('../icons/Telegram'))
 const socials = [
   {
     name: "GitHub",
-    url: "https://github.com/onlive1337",
+    url: "https://github.com/rustdevlad",
     icon: Github,
     hoverColor: "group-hover:text-[#333]"
   },
   {
     name: "Telegram",
-    url: "https://t.me/onswix",
+    url: "https://t.me/rustdevlad",
     icon: Telegram,
     hoverColor: "group-hover:text-[#229ED9]"
   },
   {
     name: "Discord",
-    url: "https://discord.com/users/605732226201550892",
+    url: "https://discord.com/users/1139593105969000449",
     icon: Discord,
     hoverColor: "group-hover:text-[#5865F2]"
   },
   {
     name: "Steam",
-    url: "https://steamcommunity.com/id/onswix",
+    url: "https://steamcommunity.com/id/rustdevlad",
     icon: Steam,
     hoverColor: "group-hover:text-[#1b2838]"
   },
@@ -39,7 +39,7 @@ export const Socials = memo(function Socials() {
     <section id="socials" className="py-16">
       <div className="container mx-auto px-4">
         <h2 className="mb-12 text-center text-3xl font-bold text-gray-900 dark:text-white">
-          Connect with me
+          Связаться со мной
         </h2>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
           {socials.map((social) => (

@@ -142,17 +142,17 @@ const HeroContent = memo(function HeroContent() {
   return (
     <div className="text-center space-y-4">
       <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-        onlive
+        Владислав
       </h1>
       <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300">
-        Full Stack Developer
+        Full Stack Разработчик
       </p>
       <div className="flex flex-col items-center gap-1 text-gray-600 dark:text-gray-400">
         <div className="flex items-center gap-2 flex-wrap justify-center">
-          <span>smol femboy dev</span>
-          <span className="text-xl">🦊</span>
-          <span>from</span>
-          <span className="text-xl">🇺🇿</span>
+          <span>кибер кот программист</span>
+          <span className="text-xl">🐱</span>
+          <span>из</span>
+          <span className="text-xl">𝚔𝚣</span>
         </div>
         <span className="font-mono text-sm">({<PreciseAge />} y.o)</span>
       </div>
