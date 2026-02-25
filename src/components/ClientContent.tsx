@@ -1,11 +1,16 @@
 "use client";
 import { Suspense } from 'react'
 import dynamic from 'next/dynamic'
-import { InitialFadeIn, ScrollFadeIn } from '@/utils/Animations'
+import { ScrollFadeIn } from '@/utils/Animations'
+
+// Socials импортируем напрямую — это первый видимый блок после Hero,
+// не нужна ленивая загрузка. InitialFadeIn убран: на static export
+// framer-motion мог зависнуть на opacity:0 до завершения гидрации.
+import { Socials } from '@/components/sections/Socials'
 
 const Technologies = dynamic(
   () => import('@/components/sections/Technologies').then(mod => mod.Technologies),
-  { 
+  {
     ssr: false,
     loading: () => <div className="h-96 opacity-0" />
   }
@@ -13,20 +18,20 @@ const Technologies = dynamic(
 
 const Portfolio = dynamic(
   () => import('@/components/sections/Portfolio').then(mod => mod.Portfolio),
-  { 
+  {
     ssr: false,
     loading: () => <div className="h-96" />
   }
 );
-
+/*
 const Socials = dynamic(
   () => import('@/components/sections/Socials').then(mod => mod.Socials),
   { ssr: false }
 );
-
+*/
 const NowPlaying = dynamic(
   () => import('@/components/sections/NowPlaying').then(mod => mod.NowPlaying),
-  { 
+  {
     ssr: false,
     loading: () => <div className="h-40" />
   }
@@ -34,7 +39,7 @@ const NowPlaying = dynamic(
 
 const Gaming = dynamic(
   () => import('@/components/sections/Gaming').then(mod => mod.Gaming),
-  { 
+  {
     ssr: false,
     loading: () => <div className="h-40" />
   }
@@ -49,10 +54,9 @@ const Analytics = dynamic(
 export function ClientContent() {
   return (
     <>
+        {/* Socials рендерится напрямую, без анимации-обёртки */}
       <Suspense>
-        <InitialFadeIn delay={500}>
           <Socials />
-        </InitialFadeIn>
       </Suspense>
 
       <div className="space-y-32">
