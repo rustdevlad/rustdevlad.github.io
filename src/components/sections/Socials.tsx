@@ -1,6 +1,6 @@
 "use client"
 import { memo } from 'react'
-import dynamic from 'next/dynamic'
+//import dynamic from 'next/dynamic'
 
 // ФИКС: прямые импорты вместо dynamic() для иконок.
 // Dynamic import для таких маленьких SVG-компонентов создавал
