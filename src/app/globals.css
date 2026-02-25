@@ -36,12 +36,31 @@
   }
 }
 
+/*
+ * Глобальные transition для смены темы.
+ * GITHUB PAGES: работает нормально.
+ * VDS: тоже ок, менять не нужно.
+ */
 *, 
 *::before, 
 *::after {
   transition-property: background-color, border-color, color, fill, stroke;
   transition-duration: 700ms;
   transition-timing-function: ease-in-out;
+}
+
+/* ============================================================
+ * js-loading — скрываем контент до загрузки, чтобы не было
+ * flash белого/тёмного фона при смене темы.
+ *
+ * ФИКС: добавлен transition: none чтобы opacity убиралась
+ * мгновенно, без анимации. Также layout.tsx теперь имеет
+ * fallback setTimeout(300мс) — класс точно уберётся даже
+ * если DOMContentLoaded не сработает на GitHub Pages.
+ * ============================================================ */
+html.js-loading * {
+  opacity: 0 !important;
+  transition: none !important; /* важно: не анимируем скрытое состояние */
 }
 
 @media (max-width: 767px) {
@@ -72,9 +91,11 @@
   }
 }
 
-html.js-loading * {
+/*
+html.js-loading * { // выше: поменял для GitHub Pages
   opacity: 0;
 }
+*/
 
 html, body {
   min-height: 100dvh;

@@ -32,14 +32,24 @@ export default function RootLayout({
               function removeLoadingClass() {
                 document.documentElement.classList.remove('js-loading');
               }
-
-              if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', removeLoadingClass);
-              } else {
+              
+              // Гарантированный fallback — убираем класс максимум через 300мс
+              // Это фикс для GitHub Pages где beforeInteractive может не успеть
+              var fallbackTimer = setTimeout(removeLoadingClass, 300);
+              
+              function removeWithCleanup() {
+                clearTimeout(fallbackTimer);
                 removeLoadingClass();
               }
 
-              window.addEventListener('load', removeLoadingClass);
+              if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', removeWithCleanup, { once: true });
+              } else {
+                // DOM уже готов (статический экспорт часто попадает сюда)
+                removeWithCleanup();
+              }
+
+              window.addEventListener('load', removeWithCleanup, { once: true });
             })();
           `}
         </Script>

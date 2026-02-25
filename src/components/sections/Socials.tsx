@@ -2,10 +2,17 @@
 import { memo } from 'react'
 import dynamic from 'next/dynamic'
 
-const Github = dynamic(() => import('../icons/Github'))
-const Steam = dynamic(() => import('../icons/Steam'))
-const Discord = dynamic(() => import('../icons/Discord'))
-const Telegram = dynamic(() => import('../icons/Telegram'))
+// ФИКС: прямые импорты вместо dynamic() для иконок.
+// Dynamic import для таких маленьких SVG-компонентов создавал
+// двойную асинхронность на static export (GitHub Pages),
+// из-за чего иконки не рендерились после гидрации.
+//
+// VDS: прямые импорты тоже лучше — меньше waterfall запросов.
+
+import Github from '../icons/Github' // БЫЛО: const Github = dynamic(() => import('../icons/Github'))
+import Steam from '../icons/Steam'
+import Discord from '../icons/Discord'
+import Telegram from '../icons/Telegram'
 
 const socials = [
   {
