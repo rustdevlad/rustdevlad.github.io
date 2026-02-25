@@ -53,7 +53,7 @@ export const Socials = memo(function Socials() {
               <social.icon 
                 className={`h-6 w-6 transition-colors duration-300 ${social.hoverColor}`} 
               />
-              <span className={`font-medium hidden sm:inline transition-colors duration-300 ${social.hoverColor}`}>
+              <span className={`font-medium transition-colors duration-300 ${social.hoverColor}`}>
                 {social.name}
               </span>
             </a>
