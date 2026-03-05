@@ -10,8 +10,9 @@ const ThemeToggle = dynamic(() => import('./ThemeToggle').then(mod => mod.ThemeT
 })
 
 const navigation = [
-    { name: "Социальные сети", href: "#socials" },
+    { name: "Контакт", href: "#contacts" },
     { name: "Технологии", href: "#technologies" },
+    { name: "Опыт работы", href: "#experience" },
     { name: "Портфолио", href: "#portfolio" },
     { name: "Резюме", href: "/resume" },
 ] as const;

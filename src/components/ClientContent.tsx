@@ -1,5 +1,5 @@
 "use client";
-import { Suspense } from 'react'
+import {memo, Suspense} from 'react'
 import dynamic from 'next/dynamic'
 import { InitialFadeIn, ScrollFadeIn } from '@/utils/Animations'
 
@@ -40,6 +40,13 @@ const Gaming = dynamic(
   }
 );
 
+const Experience = dynamic(
+    () => import('@/components/sections/Experience').then(mod => mod.Experience),
+    {
+        ssr: false,
+        loading: () => <div className="h-96" />
+    }
+);
 
 const Analytics = dynamic(
   () => import('@/components/sections/Analytics').then(mod => mod.Analytics),
@@ -59,6 +66,12 @@ export function ClientContent() {
         <Suspense>
           <Technologies />
         </Suspense>
+
+      <Suspense>
+          <ScrollFadeIn>
+              <Experience />
+          </ScrollFadeIn>
+      </Suspense>
 
         <Suspense>
           <ScrollFadeIn>
