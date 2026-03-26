@@ -48,11 +48,11 @@ const Experience = dynamic(
     }
 );
 
-const Analytics = dynamic(
+/*const Analytics = dynamic(
   () => import('@/components/sections/Analytics').then(mod => mod.Analytics),
   { ssr: false }
-);
-
+); // Убрал блок Terminal
+*/
 export function ClientContent() {
   return (
     <>
@@ -95,14 +95,14 @@ export function ClientContent() {
         </ScrollFadeIn>
       </div>
 
-      <div>
+        {/*<div>
 
         <Suspense>
           <ScrollFadeIn>
             <Analytics />
           </ScrollFadeIn>
-        </Suspense>
-      </div>
+        </Suspense> // Убрал блок Terminal
+      </div>*/}
     </>
   );
 }
